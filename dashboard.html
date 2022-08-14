@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/image/logo.png">
+    <title>Integrity Bank- Your dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="dash-nav">
+            <ul>
+                <li><a href="./index.html" class="dash-logo">
+                    <img src="./image/logo.png" alt="myLogo">
+                    <span class="nav-item">INTEGRITY BANK</span>
+                </a></li>
+                
+                <li><a href="#" id="side-button-1">
+                    <i class="fas fa-wallet"></i>
+                    <span class="nav-item">Balance</span>
+                </a></li>
+                
+                <li><a href="#" id="side-button-2">
+                    <i class="fas fa-exchange"></i>
+                    <span class="nav-item">Transfer</span>
+                </a></li>
+                
+                <li><a href="#" id="side-button-3">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span class="nav-item">Deposit</span>
+                </a></li>
+
+                <li><a href="#" id="side-button-4">
+                    <i class="fas fa-random"></i>
+                    <span class="nav-item">Withdraw</span>
+                </a></li>
+
+                <li><a href="#" class="logout" id="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <section class="main">
+            <div class="main-top">
+                <h2>Welcome to your Dashboard, <span id="name"></span></h2>
+                <!-- <i class="fas fa-user-cog"></i> -->
+                <h3>Acc no: <span id="acc-no"></span></h3>
+            </div>
+            
+
+            <div class="cards">
+                <div class="card-details">
+                    <i class="fas fa-wallet"></i>
+                    <h2>Balance</h2>
+                    <p>Check balance here</p>
+                    <button type="button" id="button-1">CHECK</button>
+
+                    <div class="popup" id="popup-balance">
+                        <i class="fas fa-times cancel-pop1"></i>
+                        <p class="amount">Your Balance is:</p>
+                        <button type="button" id="close-popup">OK</button>
+                    </div>
+                </div>
+
+                <div class="card-details">
+                    <i class="fas fa-exchange"></i>
+                    <h2>Transfer</h2>
+                    <p>Make Transfer here</p>
+                    <button type="button" id="button-2">TRANSFER</button>
+
+                    <div class="popup" id="popup-transfer">
+                        <i class="fas fa-times cancel-pop2"></i>
+                        <input type="number" name="transfer" id="transfer-amount" placeholder="Amount to Transfer"> <br>
+
+                        <input type="name" name="transfer-name" id="transfer-name" placeholder="To (username of the receiver)"> <br>
+                        <button type="button" id="close-transfer-popup">Transfer</button>
+                    </div>
+                </div>
+
+            
+
+                <div class="card-details">
+                    <i class="fas fa-money-check-alt"></i>
+                    <h2>Deposit</h2>
+                    <p>Make Deposits here</p>
+                    <button type="button" id="button-3">DEPOSIT</button>
+
+                    <div class="popup" id="popup-deposit">
+                        <i class="fas fa-times cancel-pop3"></i>
+                        <input type="number" name="deposit" id="deposit" placeholder="Amount to Deposit"> <br>
+                        <button type="button" id="close-deposit-popup">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="card-details">
+                    <i class="fas fa-random"></i>
+                    <h2>Withdraw</h2>
+                    <p>Make a withdraw here</p>
+                    <button type="button" id="button-4">WITHDRAW</button>
+
+                    <div class="popup" id="popup-withdraw">
+                        <i class="fas fa-times cancel-pop4"></i>
+                        <input type="number" name="withdraw" id="withdraw" placeholder="Amount to Withdraw"> <br>
+                        <button type="button" id="close-withdraw-popup">Withdraw</button>
+                    </div>
+                </div>
+                
+            </div>
+            <section class="bottom-card">
+                <h1>INTEGRITY BANK INFO</h1>
+                <div class="bottom-card-box">
+                    <ul>
+                        <li class="integrity-acc active">INTEGRITY ACCOUNTS</li>
+                        <li class="transact">TRANSACTION HISTORY</li>
+                        <!-- <li></li>
+                        <li></li> -->
+                    </ul>
+                    <div class="bottom-card-details">
+                        <div class="bottom-box-details box1">
+                            <h3>INTEGRITY- CURRENT</h3>
+                            <button>Read more</button>
+                        </div>
+
+                        <div class="bottom-box-details box2">
+                            <h3>INTEGRITY- SAVINGS</h3>
+                            <button>Read more</button>
+                        </div>
+
+                        <div class="bottom-box-details box3">
+                            <h3>INTEGRITY- DOMICILLIARY</h3>
+                            <button>Read more</button>
+                        </div>
+
+                        <div class="trans-history-details">
+                            <div class="text-area"></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+        </section>
+    </div>
+
+
+    <script src="/dashboard.js"></script>
+</body>
+</html>

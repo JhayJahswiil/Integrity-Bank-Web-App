@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./image/logo.png">
+    <title>Integrity Bank- register page</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+    <header class="container" id="register">
+        <nav class="nav">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="logo"></a> 
+               <a href="./index.html"><h2>Integrity Bank</h2></a>
+            </div>
+
+            
+            <div class="toggle">
+                <i class="fa-solid fa-bars menu_open"></i>
+                <i class="fa-solid fa-xmark menu_close"></i>
+            </div>
+
+            <div class="nav-links">
+                <div class="menu">
+                     <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">Features</a></li>
+                        <li><a href="./index.html">Company</a></li>
+                        <li><a href="./index.html">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="sign">
+                    <a href="./login.html">Login</a>
+                    <a href="./register.html">Register</a>
+                </div>
+                </div>
+        </nav>
+
+        <form action="" method="post" class="form">
+        <div class="login-top-text">
+            <h2>CREATE ACCOUNT</h2>
+            <p>Kindly go through the following to <br> create an account.</p>
+        </div>
+            <h2 class="register">REGISTER</h2>
+            <p class="register-error"></p>
+        
+        <div class="input">
+                <label for="full-name">Full Name</label>
+                <input type="name" name="fullname" class="full-name" id="full-name" class="full-name" placeholder="Full Name" autocomplete="off">
+                <span class="input-granted" id="name-granted"></span>
+                <span class="input-error" id="name-error"></span>
+        </div>
+        
+        <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email adress" autocomplete="off">
+                <span class="input-granted" id="email-granted"></span>
+                <span class="input-error" id="email-error"></span>
+        </div>
+
+        <div class="input">
+                <label for="username">Username</label>
+                <input type="username" name="username" id="username" placeholder="Username" autocomplete="off">
+                <span class="input-granted" id="user-granted"></span>
+                <span class="input-error" id="user-error"></span>
+        </div>
+        
+
+        <div class="input input-password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+            <span class="input-granted" id="pass-granted"></span>
+            <span class="input-error" id="pass-error"></span>
+            <i class="fas fa-eye open-eye"></i>
+            <i class="fas fa-eye-slash close-eye"></i>
+        </div>
+        
+        <button type="submit" id="submit">REGISTER</button>
+
+        <div class="login-bottom-text">
+            <p>Don't have an account? <span><a href="./login.html">LOGIN</a></span> </p>
+        </div>
+
+
+    </form>
+
+        <div class="top">
+            <a href="#register"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+    </header>
+    
+    <script src="/register.js"></script>
+</body>
+</html>
